@@ -1,13 +1,14 @@
+import { Link } from "react-router-dom";
+import React from 'react';
 export function Navbar() {
     return <>
-        <div>
-            <button>Home</button>
-            <button>My Courses</button>
-            <button style={{
-                position: "absolute",
-                right: 10
-            }}>PP</button>
-            <hr></hr>
+        <div className="nav-div">
+            <ul className="nav-ul">
+                <li><button><Link to="/">Home</Link></button></li>
+                <li><button><Link to="/explore">Explore</Link></button></li>
+                <li><button><Link to="/mycourses">My Courses</Link></button></li>
+                <li><button className="r8-btn"><Link to="/profile">Profile</Link></button></li>
+            </ul>
         </div>
     </>
 }
