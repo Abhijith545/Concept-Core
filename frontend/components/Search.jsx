@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-export function Search() {
+export function Search({placeholder}) {
     const [search, setSearch] = useState("")
     return <div className="search">
-            <input name="search-box" type="text" placeholder="Enter topic to search" value={search} 
+            <input name="search-box" type="text" placeholder={placeholder} value={search} 
                 onChange={(e) => setSearch(e.target.value)}
             />
             <button name="search-btn" onClick={() => {
