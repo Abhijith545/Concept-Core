@@ -1,2 +1,2 @@
-# Concept-Core
+# CONCEPT-CORE
 Major Project
