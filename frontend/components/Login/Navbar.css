@@ -1,0 +1,74 @@
+.nav-div {
+    width: 200px;
+    height: 100vh;
+    background-color:  #ffffff30;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    padding: 20px 15px;
+    transition: left 0.3s ease-in-out;
+}
+
+.nav-div.open {
+    left: 0;
+    padding-top: 35px;
+    padding-left: 10px;
+}
+
+.nav-ul, .nav-right {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-ul {
+    gap: 0px;
+}
+
+.nav-right {
+    margin-top: auto; 
+    gap: 0px;
+}
+
+.nav-ul li, .nav-right li {
+    width: 100%;
+}
+
+.nav-ul button, .nav-right button {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding-left: 0px;
+}
+
+.nav-ul a, .nav-right a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-ul a:hover, .nav-right a:hover {
+    background-color: #ffffff52;
+}
+
+.hamburger {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    z-index: 1000;
+}
